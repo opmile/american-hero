@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-color: #161616;
+    font-family: "Nunito", system-ui;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para a section */
+.info-section {
+    margin: 3rem 13rem 0 13rem;
+    display: flex;              /* Alinha os elementos (imagem e texto) lado a lado */
+    align-items: center;        /* Alinha verticalmente os itens no centro */
+    justify-content: space-around; /* Espaça os itens horizontalmente */
+    padding: 20px;              /* Espaçamento interno da section */
+    background-color: #1E1E1E;  /* Cor de fundo para a section */
+    gap: 20px;                  /* Espaçamento entre a imagem e o texto */
+    border-radius: 12px;
+    box-shadow: 1px 1px 13px 7px #000000;
+}
+
+/* Estilo para a imagem */
+.info-section img {
+    max-width: 35%;             /* Define a largura máxima da imagem */
+    height: auto;               /* Mantém a proporção da imagem */
+    border-radius: 10px;         /* Opcional: arredonda os cantos da imagem */
+}
+
+/* Estilo para o conteúdo de texto */
+.info-section .text-content {
+    max-width: 55%;             /* Define a largura máxima do texto */
+}
+
+.info-section .text-content h2 {
+    font-size: 2.5rem;            /* Tamanho do título */
+    margin-bottom: 14px;        /* Espaço abaixo do título */
+}
+
+.info-section .text-content p {
+    font-size: 1.15rem;          /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 15px;        /* Espaçamento entre os parágrafos */
+    line-height: 1.56;           /* Define o espaçamento entre as linhas */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column; /* Empilha os itens verticalmente em telas pequenas */
+        text-align: center;     /* Centraliza o texto */
+    }
+
+    .info-section img {
+        max-width: 100%;        /* A imagem ocupa toda a largura disponível */
+    }
+
+    .info-section .text-content {
+        max-width: 100%;        /* O texto também ocupa toda a largura disponível */
+    }
+}
